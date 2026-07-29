@@ -23,7 +23,6 @@
   <script type="text/Javascript" src="js/view/view.js?version={VERSION}"></script>
   <script type="text/Javascript" src="js/commands/searchcommands.js?version={VERSION}"></script>
   <script type="text/Javascript" src="js/commands/visualcommands.js?version={VERSION}"></script>
-  <script type="text/Javascript" src="js/commands/visualblockcommands.js?version={VERSION}"></script>
   <script type="text/Javascript" src="js/commands/timescommands.js?version={VERSION}"></script>
   <script type="text/Javascript" src="js/commands/commands.js?version={VERSION}"></script>
   <script type="text/Javascript" src="js/view/event.js?version={VERSION}"></script>
@@ -34,19 +33,10 @@
   <script type="text/Javascript" src="js/testing/testview.js?version={VERSION}"></script>
   <script type="text/Javascript" src="js/testing/init_testing.js?version={VERSION}"></script>
 
-  <!--
-  <script type="text/Javascript" src="js/jquery.js"></script>
-  -->
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
   <script type="text/javascript">
-    google.load("jquery", "1.6.4");
-
-    google.setOnLoadCallback(function() {
+    $(document).ready(function () {
         init_testing();
-
-        $('.test_description').live('click', function() {
-            $(this).siblings().toggle();
-        })
     });
   </script>
  </head>
